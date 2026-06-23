@@ -4,20 +4,20 @@ A fully local Retrieval-Augmented Generation (RAG) system built with LangChain,
 ChromaDB, and Ollama. No API keys, no cloud, no cost.
 
 ## Architecture
-PDF Documents
-↓
-Chunking (RecursiveCharacterTextSplitter)
-↓
-Embeddings (nomic-embed-text via Ollama)
-↓
-Vector Store (ChromaDB)
-↓
-Query
-↓
-Hybrid Retrieval (BM25 + Dense — Reciprocal Rank Fusion)
-↓
-LLM Reranking (qwen3 via Ollama)
-↓
+PDF Documents 
+→ 
+Chunking (RecursiveCharacterTextSplitter) 
+→ 
+Embeddings (nomic-embed-text via Ollama) 
+→ 
+Vector Store (ChromaDB) 
+→ 
+Query 
+→ 
+Hybrid Retrieval (BM25 + Dense — Reciprocal Rank Fusion) 
+→ 
+LLM Reranking (qwen3 via Ollama) 
+→ 
 Generation (qwen3 via Ollama)
 
 ## Stack
